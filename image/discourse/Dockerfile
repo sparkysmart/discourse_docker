@@ -10,7 +10,7 @@ RUN useradd discourse -s /bin/bash -m -U &&\
     cd /var/www &&\
     git clone https://github.com/sparkysmart/discourse.git &&\
     cd discourse &&\
-    git remote set-branches --add origin tests-passed &&\
+    git remote set-branches --add origin sparky &&\
     chown -R discourse:discourse /var/www/discourse &&\
     cd /var/www/discourse &&\
     sudo -u discourse bundle install --deployment \
