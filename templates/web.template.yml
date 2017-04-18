@@ -18,7 +18,7 @@ env:
 
 params:
   # SSH key is required for remote access into the container
-  version: master
+  version: sparkystable
 
   home: /var/www/discourse
   upload_size: 10m
