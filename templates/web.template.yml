@@ -109,7 +109,8 @@ run:
       hook: code
       cmd:
         - chown -R discourse:www-data /var/www
-        - mv discourse discourse.old && git clone https://github.com/sparkysmart/discourse.git
+        - rm -rf discourse && git clone https://github.com/sparkysmart/discourse.git /var/www/discourse/
+
 
   - exec:
       cd: /var/www/discourse
