@@ -6,8 +6,6 @@ sudo -s
 mkdir /var/discourse
 git clone https://github.com/sparkysmart/discourse_docker.git /var/discourse/
 cd /var/discourse
-cp samples/web_only.yml containers/app.yml
-cp samples/redis.yml containers/redis.yml
-cp samples/data.yml containers/data.yml
+cp samples/standalone.yml containers/app.yml
 
-./launcher bootstrap app
+./discourse-setup
