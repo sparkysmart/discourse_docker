@@ -1,4 +1,6 @@
-sudo apt-get update && sudo apt-get upgrade
+#!/bin/bash
+
+sudo apt-get update -y && sudo apt-get upgrade
 sudo apt-get install git
 wget -qO- https://get.docker.com/ | sh
 sudo usermod -aG docker ubuntu
