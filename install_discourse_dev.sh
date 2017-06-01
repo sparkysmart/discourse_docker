@@ -6,6 +6,10 @@ sudo -s
 mkdir /var/discourse
 git clone https://github.com/sparkysmart/discourse_docker.git /var/discourse/
 cd /var/discourse
-cp samples/standalone.yml containers/app.yml
+#cp samples/standalone.yml containers/app.yml
+
+# scp /var/www/market/deploy/discourse/dev.yml ubuntu@beta.slickblox.com:/var/discourse/containers/app.yml
+scp ~/eslam/work/market/deploy/discourse/dev.yml ubuntu@beta.slickblox.com:/var/discourse/containers/app.yml
+
 
 ./discourse-setup
