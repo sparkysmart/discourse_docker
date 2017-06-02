@@ -10,4 +10,4 @@ mkdir /var/discourse
 git clone https://github.com/sparkysmart/discourse_docker.git /var/discourse/
 cd /var/discourse
 sudo chmod 777 -R /var/discourse/containers/
-echo 'finsh preparing environment of discourse , grap app.yml file and start Bootstrab :)'
+echo 'we finshed preparing environment of discourse , grap app.yml file and start Bootstrab'
