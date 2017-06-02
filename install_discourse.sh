@@ -10,11 +10,4 @@ mkdir /var/discourse
 git clone https://github.com/sparkysmart/discourse_docker.git /var/discourse/
 cd /var/discourse
 sudo chmod 777 -R /var/discourse/containers/
-
-#cp samples/standalone.yml containers/app.yml
-
-# scp /var/www/market/deploy/discourse/dev.yml ubuntu@beta.slickblox.com:/var/discourse/containers/app.yml
-# scp ~/eslam/work/market/deploy/discourse/dev.yml ubuntu@beta.slickblox.com:/var/discourse/containers/app.yml
-
-
-# ./launcher bootstrap app
+echo 'finsh preparing environment of discourse , grap app.yml file and start Bootstrab :)'
